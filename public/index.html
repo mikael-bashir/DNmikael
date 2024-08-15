@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1">
+    <title>mikael bashir</title>
+    <link rel="stylesheet" href="DNexercise.css">
+
+</head>
+<header ole="region">
+    <div class="navbar" role="section">
+        <h1 role="contentinfo">validation form</h1>
+    </div>
+</header>
+<body role="region">
+    <div class="container" role="section">
+        <div class="boxForm" role="form">
+            <div class="labels" role="contentinfo">
+                <label for="nameInput">Name: </label>
+                <label for="emailInput">Email: </label>
+                <label for="cardInput">Card: </label>
+            </div>
+            <div class="inputBoxes">
+                <input type="text" id="nameInput" placeholder="Enter Your Name">
+                <input type="text" id="emailInput" placeholder="Enter Your Email">
+                <input type="text" id="cardInput" placeholder="Enter a Proxy Credit Card Number.">  
+                <button id="submitButton">Submit</button>              
+            </div>            
+            <div class="errorLabels">
+                <div class="nameInputNotAlpha" id="nameNotAlpha" role="contentinfo" for="nameInput">Name can only contain letters</div>
+                <div class="nameInputEmpty" id="nameEmpty" role="contentinfo" for="nameInput">Name field can not be empty</div>
+                <div class="nameInputTooLong" id="nameTooLong" role="contentinfo" for="nameInput">Name length can't exceed 100 characters</div>
+                <div class="emailInputEmpty" id="emailEmpty" role="contentinfo" for="emailInput">Email field can not be empty</div>
+                <div class="emailInputTooLong" id="emailTooLong" role="contentinfo" for="emailInput">Email length can't exceed 500 characters</div>
+                <div class="emailInputNoAtSign" id="emailInvalid" role="contentinfo" for="emailInput">Email must contain an @ symbol</div>
+                <div class="cardInputNotNumeric" id="cardNotNum" role="contentinfo" for="cardInput">Card can only contain numbers</div>
+                <div class="cardInputTooLong" id="cardTooLong" role="contentinfo" for="cardInput">Card number length can't exceed 19 digits</div>
+                <div class="cardInputInvalid" id="cardInvalid" role="contentinfo" for="cardInput">Card number must be valid</div>
+                <div class="cardInputEmpty" id="cardEmpty" role="contentinfo" for="cardInput">Card number field can not be empty</div>    
+                <div class="cardInputTooShort" id="cardTooShort" role="contentinfo" for="cardInput">Card number length can't subceed 13 digits</div>            
+            </div>       
+        </div>
+    </div>
+    <script src="DNexercise.js"></script>
+</body>
+</html>
