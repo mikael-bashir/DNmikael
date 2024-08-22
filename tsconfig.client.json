@@ -1,0 +1,15 @@
+{
+    "compilerOptions": {
+      "outDir": "./publicFiles",
+      "rootDir": "./src/client",
+      "target": "es6",
+      "module": "es6",
+      "strict": true,
+      "esModuleInterop": true,
+      "skipLibCheck": true,
+      "forceConsistentCasingInFileNames": true,
+    },
+    "include": ["src/client/**/*.ts"],
+    "exclude": ["node_modules", "dist", "publicFiles"]
+}
+  
